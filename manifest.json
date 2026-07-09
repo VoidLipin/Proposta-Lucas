@@ -1,0 +1,22 @@
+{
+  "name": "Cadência — Presença digital para escolas e cursos",
+  "short_name": "Cadência",
+  "description": "Vídeo e post no mesmo ritmo, toda semana, para escolas e produtoras de curso.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14171B",
+  "theme_color": "#14171B",
+  "lang": "pt-BR",
+  "icons": [
+    {
+      "src": "assets/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "assets/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
