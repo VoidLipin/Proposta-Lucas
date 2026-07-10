@@ -1,0 +1,14 @@
+{
+  "name": "Asaph Maia Imobvídeos — Proposta para o Mais Redação",
+  "short_name": "Asaph Maia",
+  "description": "Gestão de redes sociais pra atrair, engajar e converter mais alunos no Mais Redação.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#14171B",
+  "theme_color": "#14171B",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
