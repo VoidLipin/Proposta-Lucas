@@ -3,25 +3,25 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Cadência — Presença digital em vídeo e posts para escolas e cursos</title>
-<meta name="description" content="A Cadência cuida do vídeo e do post de cada semana para escolas e produtoras de curso. Roteiro, gravação, edição e publicação — no mesmo ritmo, toda semana." />
+<title>Asaph Maia — Proposta de Presença Digital para o Mais Redação</title>
+<meta name="description" content="Proposta de presença digital da Asaph Maia para o curso Mais Redação: vídeos, carrosséis e stories estratégicos, no mesmo ritmo, toda semana." />
 <meta name="theme-color" content="#14171B" />
 <link rel="manifest" href="manifest.json" />
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='22' fill='%2314171B'/%3E%3Ccircle cx='30' cy='50' r='9' fill='%234FD1C5'/%3E%3Ccircle cx='50' cy='50' r='9' fill='%23F2A93B'/%3E%3Ccircle cx='70' cy='50' r='9' fill='%23F4F1E9'/%3E%3C/svg%3E" />
+<link rel="icon" type="image/png" href="assets/icon-192.png" />
 
 <!-- Open Graph -->
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Cadência — Presença digital em vídeo e posts para escolas e cursos" />
-<meta property="og:description" content="Roteiro, gravação, edição e publicação — vídeo e post no mesmo ritmo, toda semana." />
-<meta property="og:url" content="https://cadencia.com.br/" />
-<meta property="og:image" content="https://cadencia.com.br/assets/og-image.png" />
+<meta property="og:title" content="Asaph Maia — Proposta de Presença Digital para o Mais Redação" />
+<meta property="og:description" content="Vídeos, carrosséis e stories estratégicos para o Mais Redação — no mesmo ritmo, toda semana." />
+<meta property="og:url" content="https://asaphmaia.com.br/mais-redacao" />
+<meta property="og:image" content="https://asaphmaia.com.br/assets/og-image.png" />
 <meta property="og:locale" content="pt_BR" />
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image" />
-<meta name="twitter:title" content="Cadência — Presença digital para escolas e cursos" />
+<meta name="twitter:title" content="Asaph Maia — Proposta para o Mais Redação" />
 <meta name="twitter:description" content="Vídeo e post no mesmo ritmo, toda semana." />
-<meta name="twitter:image" content="https://cadencia.com.br/assets/og-image.png" />
+<meta name="twitter:image" content="https://asaphmaia.com.br/assets/og-image.png" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -85,6 +85,12 @@
     margin: 0;
     letter-spacing: -0.01em;
   }
+
+  .prepared-for{
+    font-family: var(--mono); font-size:0.75rem; color: var(--paper-dim);
+    margin-bottom:14px; display:flex; align-items:center; gap:8px;
+  }
+  .prepared-for::before{ content:"→"; color: var(--amber); }
 
   .eyebrow{
     font-family: var(--mono);
@@ -153,11 +159,8 @@
     font-family: var(--display); font-weight:800; font-size:1.25rem;
     text-decoration:none; display:flex; align-items:center; gap:10px;
   }
-  .brand-dots{ display:flex; gap:4px; }
-  .brand-dots span{ width:7px; height:7px; border-radius:50%; }
-  .brand-dots span:nth-child(1){ background: var(--teal); }
-  .brand-dots span:nth-child(2){ background: var(--amber); }
-  .brand-dots span:nth-child(3){ background: var(--paper); }
+  .brand img{ height: 34px; width: auto; display:block; }
+  .foot-brand .brand img{ height: 30px; }
 
   .nav-links{ display:flex; gap:32px; align-items:center; }
   .nav-links a{ text-decoration:none; font-size:0.92rem; color: var(--paper-dim); transition:color .2s; }
@@ -336,6 +339,8 @@
     text-transform:uppercase; letter-spacing:0.06em;
   }
   .plan h3{ font-size:1.3rem; }
+  .plan-tag{ font-style: italic; color: var(--teal); font-size:0.92rem; margin-top:6px; }
+  .plan.featured .plan-tag{ color: var(--amber); }
   .plan .price{ font-family: var(--display); font-size:2.2rem; margin-top:14px; }
   .plan .price small{ font-family: var(--mono); font-size:0.85rem; color:var(--paper-dim); font-weight:400; }
   .plan-desc{ color: var(--paper-dim); font-size:0.88rem; margin-top:10px; }
@@ -345,6 +350,16 @@
   .plan.featured li svg{ color: var(--amber); }
   .plan .btn{ margin-top:28px; justify-content:center; width:100%; }
   @media (max-width: 900px){ .plan-grid{ grid-template-columns: 1fr; } .plan.featured{ transform:none; order:-1; } }
+
+  /* =============== GUIA DE DECISÃO =============== */
+  .decision{ background: var(--ink-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
+  .decision-grid{ display:grid; grid-template-columns: repeat(3,1fr); gap:20px; }
+  .decision-card{ border:1px solid var(--line); border-radius:16px; padding:26px; }
+  .decision-card.reco{ border-color: var(--amber); background: rgba(242,169,59,0.06); }
+  .decision-card h4{ font-size:1.05rem; display:flex; align-items:center; gap:8px; }
+  .decision-card .reco-tag{ font-family: var(--mono); font-size:0.65rem; color: var(--ink); background: var(--amber); padding:3px 9px; border-radius:999px; }
+  .decision-card p{ color: var(--paper-dim); font-size:0.9rem; margin-top:10px; }
+  @media (max-width: 900px){ .decision-grid{ grid-template-columns: 1fr; } }
 
   /* =============== COMPARATIVO =============== */
   .compare{ background: var(--ink-2); border-top:1px solid var(--line); border-bottom:1px solid var(--line); }
@@ -400,8 +415,7 @@
 <header>
   <nav class="nav wrap" aria-label="Navegação principal">
     <a href="#top" class="brand">
-      <span class="brand-dots"><span></span><span></span><span></span></span>
-      Cadência
+      <img src="assets/logo-white.png" alt="Asaph Maia Imobvídeos" />
     </a>
     <ul class="nav-links">
       <li><a href="#solucao">Serviço</a></li>
@@ -411,7 +425,7 @@
     </ul>
     <div class="nav-cta">
       <a class="btn btn-ghost" href="#planos">Ver planos</a>
-      <a class="btn btn-primary btn-wa" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Quero+saber+mais+sobre+a+Cad%C3%AAncia.&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a Cadência">
+      <a class="btn btn-primary btn-wa" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+quero+saber+mais+sobre+a+proposta.&type=phone_number&app_absent=0" target="_blank" rel="noopener" aria-label="Falar no WhatsApp com a Asaph Maia">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.1-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-3.02.8.8-2.94-.2-.32A7.94 7.94 0 014 12a8 8 0 118 8z"/></svg>
         WhatsApp
       </a>
@@ -430,7 +444,7 @@
     <li><a href="#planos" data-nav-link>Planos</a></li>
     <li><a href="#resultados" data-nav-link>Resultados</a></li>
   </ul>
-  <a class="btn btn-primary btn-wa" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Quero+saber+mais+sobre+a+Cad%C3%AAncia.&type=phone_number&app_absent=0" target="_blank" rel="noopener">
+  <a class="btn btn-primary btn-wa" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+quero+saber+mais+sobre+a+proposta.&type=phone_number&app_absent=0" target="_blank" rel="noopener">
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.1-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-3.02.8.8-2.94-.2-.32A7.94 7.94 0 014 12a8 8 0 118 8z"/></svg>
     Falar no WhatsApp
   </a>
@@ -442,9 +456,10 @@
   <section class="hero" id="top">
     <div class="wrap hero-grid">
       <div>
-        <p class="eyebrow">Presença digital para escolas e cursos</p>
-        <h1>O feed da sua escola fala por você mesmo quando <em>ninguém está online.</em></h1>
-        <p class="lede">Cuidamos do roteiro, da gravação, da edição e da publicação do vídeo e do post de cada semana. Sua equipe ensina. A gente cuida do ritmo.</p>
+        <p class="prepared-for">Proposta preparada para Lucas Alves</p>
+        <p class="eyebrow">Proposta para o Mais Redação</p>
+        <h1>O feed do Mais Redação fala por vocês, mesmo quando <em>ninguém está online.</em></h1>
+        <p class="lede">Gestão de redes sociais pra atrair, engajar e converter mais alunos: cuidamos do roteiro, da gravação, da edição e da publicação de cada semana. Vocês ensinam. A Asaph Maia cuida do ritmo.</p>
         <div class="hero-actions">
           <a class="btn btn-primary" href="#planos">Ver planos</a>
           <a class="btn btn-ghost" href="#processo">Como funciona</a>
@@ -479,6 +494,22 @@
   </section>
 
   <!-- ===================== APRESENTAÇÃO ===================== -->
+  <section class="about" id="apresentacao">
+    <div class="wrap about-grid">
+      <div class="about-text">
+        <p class="eyebrow">Quem cuida disso</p>
+        <h2>Metodologia validada com corretores, adaptada pro Mais Redação.</h2>
+        <p>A Asaph Maia é a Imobvídeos: nosso foco de sempre é presença digital pra corretores de imóveis, gente que também não tem tempo pra editar vídeo entre uma visita e outra. Vocês curtiram esse jeito de trabalhar, e adaptamos a mesma metodologia pro Mais Redação: roteiro, câmera, edição e calendário, pra a equipe do curso focar no que faz melhor: dar aula e fechar matrícula.</p>
+        <p>Trocamos o storytelling de imóvel pelo storytelling de aprovação, mesma disciplina de calendário, aplicada ao que faz um aluno se matricular.</p>
+      </div>
+      <div class="role-list">
+        <div class="role-card"><span class="tag">Estratégia</span><h4>Estrategista de conteúdo</h4></div>
+        <div class="role-card"><span class="tag">Roteiro</span><h4>Roteirista</h4></div>
+        <div class="role-card"><span class="tag">Pós-produção</span><h4>Editor de vídeo</h4></div>
+        <div class="role-card"><span class="tag">Publicação</span><h4>Social media</h4></div>
+      </div>
+    </div>
+  </section>
 
   <!-- ===================== CENÁRIO ===================== -->
   <section id="cenario">
@@ -486,12 +517,12 @@
       <div class="sec-head">
         <p class="eyebrow">O cenário mais comum</p>
         <h2>O problema quase nunca é o conteúdo. É a rotina.</h2>
-        <p>Reconhece algum destes sintomas na sua escola?</p>
+        <p>Reconhece algum destes sintomas no Mais Redação?</p>
       </div>
       <div class="symptom-grid">
         <div class="symptom"><h4>O feed parado há semanas</h4><p>O último post é de um mês atrás e ninguém sabe muito bem por quê.</p></div>
         <div class="symptom"><h4>Aula boa, ninguém viu</h4><p>Turmas incríveis acontecem toda semana e nunca viram conteúdo.</p></div>
-        <div class="symptom"><h4>Concorrente posta todo dia</h4><p>Outra escola da região parece nunca parar — e está ganhando o feed.</p></div>
+        <div class="symptom"><h4>Concorrente posta todo dia</h4><p>Outra escola da região parece nunca parar, e está ganhando o feed.</p></div>
         <div class="symptom"><h4>Equipe sem tempo</h4><p>Quem gravaria e editaria já dá aula, atende aluno e resolve o resto.</p></div>
         <div class="symptom"><h4>"O que a gente posta hoje?"</h4><p>Sem linha editorial, cada post vira uma decisão do zero.</p></div>
         <div class="symptom"><h4>Vídeo gravado, nunca editado</h4><p>Material bom se acumula no celular sem virar conteúdo publicado.</p></div>
@@ -528,7 +559,7 @@
         <div class="benefit"><span class="num">01</span><h4>Consistência sem esforço interno</h4><p>O calendário roda mesmo em semana cheia de prova e matrícula.</p></div>
         <div class="benefit"><span class="num">02</span><h4>Autoridade que converte</h4><p>Quem pesquisa a escola encontra prova de ensino real, atualizada.</p></div>
         <div class="benefit"><span class="num">03</span><h4>Tempo de volta pra equipe</h4><p>Ninguém precisa aprender a editar vídeo pra manter o feed vivo.</p></div>
-        <div class="benefit"><span class="num">04</span><h4>Formato certo por rede</h4><p>Reels, TikTok e Shorts — cada peça pensada pro lugar onde vai rodar.</p></div>
+        <div class="benefit"><span class="num">04</span><h4>Formato pensado pro Reels</h4><p>Cada vídeo cortado no ritmo certo pro Instagram, sem sobrar tempo morto.</p></div>
         <div class="benefit"><span class="num">05</span><h4>Decisão por dado</h4><p>Relatório simples mostra o que engaja de verdade, não achismo.</p></div>
         <div class="benefit"><span class="num">06</span><h4>Previsibilidade de custo</h4><p>Um valor fixo mensal, sem orçamento surpresa por vídeo avulso.</p></div>
       </div>
@@ -553,58 +584,83 @@
   </section>
 
   <!-- ===================== PLANOS ===================== -->
-  <!-- Valores e entregas abaixo são EXEMPLO — ajuste para a realidade real do negócio antes de publicar. -->
   <section id="planos">
     <div class="wrap">
       <div class="sec-head">
         <p class="eyebrow">Planos</p>
-        <h2>Escolha o ritmo que a sua escola aguenta manter.</h2>
-        <p>Valores de exemplo — ajuste conforme sua operação.</p>
+        <h2>Escolha o ritmo que o Mais Redação aguenta manter.</h2>
       </div>
       <div class="plan-grid">
 
         <div class="plan">
           <h3>START</h3>
+          <p class="plan-tag">Essencial e Posicionamento</p>
           <p class="price">R$ 900<small>/mês</small></p>
-          <p class="plan-desc">Pra quem está começando a organizar a presença digital.</p>
+          <p class="plan-desc">Ideal para o Mais Redação começar a ter uma vitrine profissional, sem pesar no orçamento.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>4 posts por mês</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1 vídeo curto por mês</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>1 rede social (Instagram)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Relatório mensal simples</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>4 vídeos estratégicos mensais (Reels):</strong> focados em responder dúvidas comuns dos clientes locais.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>3 carrosséis de autoridade:</strong> explicando o curso e o que ele aborda de forma simples.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Organização visual (branding):</strong> um feed que transmite credibilidade e seriedade.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Direcionamento de stories:</strong> dicas do que gravar no dia a dia, sem depender de criatividade extra.</span></li>
           </ul>
-          <a class="btn btn-ghost" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Tenho+interesse+no+plano+START.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Falar sobre o START</a>
+          <a class="btn btn-ghost" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+tenho+interesse+no+plano+START.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Falar sobre o START</a>
         </div>
 
         <div class="plan featured">
-          <span class="plan-badge">Mais escolhido</span>
+          <span class="plan-badge">Mais recomendado</span>
           <h3>PRO</h3>
+          <p class="plan-tag">Crescimento e tração, o foco da venda</p>
           <p class="price">R$ 1.200<small>/mês</small></p>
-          <p class="plan-desc">O ritmo ideal pra escola que quer crescer sem sobrecarregar a equipe.</p>
+          <p class="plan-desc">O ponto de equilíbrio perfeito: mais volume de conteúdo e mais estratégia por trás de cada publicação.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>8 posts por mês</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>4 vídeos por mês (1 por semana)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>2 redes sociais (Instagram + TikTok)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Roteiro semanal incluso</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Relatório quinzenal</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>6 vídeos estratégicos mensais (Reels):</strong> mais dinamismo para alcançar novos clientes na região.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>1 carrossel semanal de aprofundamento:</strong> mostrando o desenvolvimento real dos alunos no curso.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>2 reels de 30–45s de aula por mês:</strong> storytelling que constrói a imagem do curso.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Design de percepção premium:</strong> identidade visual forte.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Reunião mensal de alinhamento:</strong> acompanhamento de métricas e ajuste de rota.</span></li>
           </ul>
-          <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Tenho+interesse+no+plano+PRO.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Falar sobre o PRO</a>
+          <a class="btn btn-primary" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+tenho+interesse+no+plano+PRO.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Falar sobre o PRO</a>
         </div>
 
         <div class="plan">
           <h3>ELITE</h3>
+          <p class="plan-tag">Domínio local</p>
           <p class="price">R$ 2.200<small>/mês</small></p>
-          <p class="plan-desc">Presença diária pra quem trata conteúdo como canal principal de matrícula.</p>
+          <p class="plan-desc">Para quem quer presença máxima e não abre mão de aparecer à frente da concorrência local.</p>
           <ul>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Posts diários (dias úteis)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>4 vídeos por semana</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>3 redes (Instagram + TikTok + YouTube Shorts)</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Gestão de comentários e DMs</li>
-            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg>Relatório semanal + reunião mensal</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>8 vídeos estratégicos mensais (Reels):</strong> o maior volume de produção entre os três planos.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>2 carrosséis por semana:</strong> focados em exibir notas mil, depoimentos de aprovados e a metodologia do Mais Redação.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>1 captação presencial mensal de aula completa (bastidores):</strong> nossa equipe vai até o curso captar o movimento das salas, depoimentos rápidos de alunos e a dinâmica do professor.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Direcionamento de conteúdo para lançamento de turmas:</strong> estratégia desenhada para os meses de pico de matrículas.</span></li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 6L9 17l-5-5"/></svg><span><strong>Suporte prioritário</strong> e reunião quinzenal de métricas.</span></li>
           </ul>
-          <a class="btn btn-ghost" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Tenho+interesse+no+plano+ELITE.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Falar sobre o ELITE</a>
+          <a class="btn btn-ghost" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+tenho+interesse+no+plano+ELITE.&type=phone_number&app_absent=0" target="_blank" rel="noopener">Falar sobre o ELITE</a>
         </div>
 
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== GUIA DE DECISÃO ===================== -->
+  <section class="decision">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow">Ajuda pra decidir</p>
+        <h2>Qual plano faz mais sentido pro momento do Mais Redação?</h2>
+      </div>
+      <div class="decision-grid">
+        <div class="decision-card">
+          <h4>START</h4>
+          <p>Prova de conceito: presença profissional com baixo investimento.</p>
+        </div>
+        <div class="decision-card reco">
+          <h4>PRO <span class="reco-tag">Recomendado</span></h4>
+          <p>Equilíbrio entre volume e estratégia, o melhor custo-benefício pra tração real.</p>
+        </div>
+        <div class="decision-card">
+          <h4>ELITE</h4>
+          <p>Pra quando o objetivo for dominar a conversa local no segmento.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -622,13 +678,13 @@
             <tr><th scope="col">Recurso</th><th scope="col">START</th><th scope="col">PRO</th><th scope="col">ELITE</th></tr>
           </thead>
           <tbody>
-            <tr><th scope="row">Posts por mês</th><td>4</td><td>8</td><td>~20 (diário útil)</td></tr>
-            <tr><th scope="row">Vídeos por mês</th><td>1</td><td>4</td><td>16</td></tr>
-            <tr><th scope="row">Redes atendidas</th><td>1</td><td>2</td><td>3</td></tr>
-            <tr><th scope="row">Roteiro incluso</th><td class="dash">—</td><td class="yes">Sim</td><td class="yes">Sim</td></tr>
-            <tr><th scope="row">Gestão de comentários/DMs</th><td class="dash">—</td><td class="dash">—</td><td class="yes">Sim</td></tr>
-            <tr><th scope="row">Frequência do relatório</th><td>Mensal</td><td>Quinzenal</td><td>Semanal</td></tr>
-            <tr><th scope="row">Reunião de estratégia</th><td class="dash">—</td><td class="dash">—</td><td>Mensal</td></tr>
+            <tr><th scope="row">Vídeos estratégicos (Reels) / mês</th><td>4</td><td>6</td><td>8</td></tr>
+            <tr><th scope="row">Carrosséis de autoridade</th><td>3 / mês</td><td>1 / semana</td><td>2 / semana</td></tr>
+            <tr><th scope="row">Reels de aula (storytelling)</th><td class="dash">—</td><td>2 / mês</td><td class="dash">—</td></tr>
+            <tr><th scope="row">Captação presencial (bastidores)</th><td class="dash">—</td><td class="dash">—</td><td>Mensal</td></tr>
+            <tr><th scope="row">Direcionamento de Stories</th><td class="yes">Sim</td><td class="dash">—</td><td class="dash">—</td></tr>
+            <tr><th scope="row">Estratégia para lançamento de turmas</th><td class="dash">—</td><td class="dash">—</td><td class="yes">Sim</td></tr>
+            <tr><th scope="row">Acompanhamento de métricas</th><td class="dash">—</td><td>Reunião mensal</td><td>Reunião quinzenal + suporte prioritário</td></tr>
           </tbody>
         </table>
       </div>
@@ -641,23 +697,23 @@
       <div class="sec-head">
         <p class="eyebrow">O que esperar</p>
         <h2>Uma curva de 90 dias, não uma promessa de um post viral.</h2>
-        <p>Presença digital é ritmo, não sorte. É assim que a maioria das escolas sente a diferença ao longo do trimestre.</p>
+        <p>Presença digital é ritmo, não sorte. É assim que o Mais Redação deve sentir a diferença ao longo do trimestre.</p>
       </div>
       <div class="roadmap">
         <div class="road-card"><span class="when">Semanas 1–4</span><h4>Fundação</h4><p>Linha editorial definida, primeiro mês de conteúdo publicado no ritmo combinado.</p></div>
         <div class="road-card"><span class="when">Mês 2</span><h4>Consolidação</h4><p>O calendário roda sem depender de lembrete interno; primeiros formatos de melhor desempenho ficam claros.</p></div>
-        <div class="road-card"><span class="when">Mês 3</span><h4>Ritmo maduro</h4><p>Conteúdo ajustado com base em relatório; feed vira referência de prova de ensino pra quem pesquisa a escola.</p></div>
+        <div class="road-card"><span class="when">Mês 3</span><h4>Ritmo maduro</h4><p>Conteúdo ajustado com base em relatório; feed vira referência de prova de ensino pra quem pesquisa o curso.</p></div>
       </div>
-      <p class="disclaimer">Prazos e curva de resultado variam conforme nicho, verba de mídia paga (se houver) e histórico prévio do perfil.</p>
+      <p class="disclaimer">Prazos e curva de resultado variam conforme verba de mídia paga (se houver) e histórico prévio do perfil.</p>
     </div>
   </section>
 
   <!-- ===================== CTA FINAL ===================== -->
   <section>
     <div class="cta-final">
-      <h2>Bora tirar o feed da sua escola do modo pausa?</h2>
+      <h2>Bora tirar o feed do Mais Redação do modo pausa?</h2>
       <p>Sem contrato de fidelidade longo. Comece pelo plano que faz sentido hoje e mude de ritmo quando quiser.</p>
-      <a class="btn btn-primary btn-wa" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Quero+saber+mais+sobre+a+Cad%C3%AAncia.&type=phone_number&app_absent=0" target="_blank" rel="noopener">
+      <a class="btn btn-primary btn-wa" href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+quero+saber+mais+sobre+a+proposta.&type=phone_number&app_absent=0" target="_blank" rel="noopener">
         <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.1-1.34A9.94 9.94 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-3.02.8.8-2.94-.2-.32A7.94 7.94 0 014 12a8 8 0 118 8z"/></svg>
         Falar no WhatsApp
       </a>
@@ -671,10 +727,9 @@
     <div class="foot-grid">
       <div class="foot-brand">
         <a href="#top" class="brand">
-          <span class="brand-dots"><span></span><span></span><span></span></span>
-          Cadência
+          <img src="assets/logo-white.png" alt="Asaph Maia Imobvídeos" />
         </a>
-        <p>Presença digital em vídeo e posts, no ritmo certo, toda semana, pra escolas e produtoras de curso.</p>
+        <p>Presença digital em vídeo e posts, no ritmo certo, toda semana. Proposta preparada para o Mais Redação.</p>
       </div>
       <div class="foot-col">
         <h5>Navegação</h5>
@@ -685,8 +740,8 @@
       </div>
       <div class="foot-col">
         <h5>Contato</h5>
-        <a href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Quero+saber+mais+sobre+a+Cad%C3%AAncia.&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp</a>
-        <a href="mailto:contato@cadencia.com.br">contato@cadencia.com.br</a>
+        <a href="https://api.whatsapp.com/send/?phone=558499229627&text=Oi%21+Sou+do+Mais+Reda%C3%A7%C3%A3o+e+quero+saber+mais+sobre+a+proposta.&type=phone_number&app_absent=0" target="_blank" rel="noopener">WhatsApp</a>
+        <a href="mailto:contato@asaphmaia.com.br">contato@asaphmaia.com.br</a>
       </div>
       <div class="foot-col">
         <h5>Legal</h5>
@@ -695,7 +750,7 @@
       </div>
     </div>
     <div class="foot-bottom">
-      <span>© 2026 Cadência. Todos os direitos reservados.</span>
+      <span>© 2026 Asaph Maia. Todos os direitos reservados.</span>
       <span>CNPJ 00.000.000/0001-00 (exemplo)</span>
     </div>
   </div>
@@ -747,7 +802,7 @@
       });
 
       // Generic section reveal
-      document.querySelectorAll('.sec-head, .symptom, .role-card, .benefit, .p-step, .plan, .road-card, .flow-item').forEach((el) => {
+      document.querySelectorAll('.sec-head, .symptom, .role-card, .benefit, .p-step, .plan, .road-card, .flow-item, .decision-card').forEach((el) => {
         gsap.from(el, {
           opacity: 0, y: 30, duration: 0.6, ease: 'power2.out',
           scrollTrigger: { trigger: el, start: 'top 88%' }
